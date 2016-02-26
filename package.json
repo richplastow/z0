@@ -1,0 +1,28 @@
+{
+  "name": "z0",
+  "version": "0.0.1",
+  "description": "A loose collection of ultra-minimal HTML+CSS+JS snippets",
+  "main": "dist/z0.js",
+  "directories": {
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+  },
+  "keywords": [
+    "frontend", "minimal", "utility", "snippet", "code-golf"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richplastow/z0.git"
+  },
+  "author": "Rich Plastow <rich@richplastow.com> (http://richplastow.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richplastow/z0/issues"
+  },
+  "homepage": "http://z0.richplastow.com/"
+}
