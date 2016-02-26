@@ -4,12 +4,74 @@
   <meta charset="utf-8">
   <title>z0</title>
 
+  <!-- z0s() stylesheet injection - see github.com/richplastow/z0/wiki/z0a -->
+  <style></style><script>!function(l,h,n,i,e,q){e=l[l.length-1],q=e.removeRule
+  e.d=q||e.deleteRule;z0s=function(s,r){i=h[s];i+9?e.d(i):i=h[s]=n++;q?e.addRule
+  (s,r,i):e.insertRule(s+'{'+r+'}',i)}}(document.styleSheets,{},0)</script>
+
+
+  <!-- ...or load the entire z0 collection from a single JavaScript file -->
+  <!--<script src="z0.js"></script>-->
+
 </head>
 <body>
 
-  <h1>z0</h1>
+  <h1><code>z0</code> <em>Web Dev Snippets</em></h1>
 
-  <h4>@todo</h4>
+  <p>The <code>&lt;HEAD></code> of this page contains the complete collection
+  of <code>z0</code> snippets. Just click the buttons in the sections below to 
+  try them out. When you’re ready to use a <code>z0</code> snippet, copy-paste 
+  its code into the <code>&lt;HEAD></code> of your own web page or web app.
+  </p>
+
+  <p>See the <a href="https://github.com/richplastow/z0/wiki">documentation</a> 
+  for more information.
+  </p>
+
+  <hr>
+
+  <h3><a href="https://github.com/richplastow/z0/wiki/z0s"><code>z0s()</code>
+  <em>stylesheet injection</em></a></h4>
+
+  <code>
+  &lt;style>&lt;/style>&lt;script>!function(l,h,n,i,e,q){e=l[l.length-1],q=e.removeRule<br>
+  e.d=q||e.deleteRule;z0s=function(s,r){i=h[s];i+9?e.d(i):i=h[s]=n++;q?e.addRule<br>
+  (s,r,i):e.insertRule(s+'{'+r+'}',i)}}(document.styleSheets,{},0)&lt;/script>
+  </code>
+
+  <h2>
+    This <code>&lt;H2></code> element will change when you click the top or 
+    bottom row of buttons
+  </h2>
+  <div class="changeme">
+    This <code>&lt;DIV></code> has the class <code>changeme</code>, and will 
+    change when you click the middle or bottom row of buttons
+  </div>
+
+  <ul>
+    <li><a href="javascript:z0s('h2','color:red')">
+      <code>z0s('h2','color:red')</code></a></li>
+    <li><a href="javascript:z0s('h2','color:green')">
+      <code>z0s('h2','color:green')</code></a></li>
+    <li><a href="javascript:z0s('h2','color:yellow')">
+      <code>z0s('h2','color:yellow')</code></a></li>
+  </ul>
+  <ul>
+    <li><a href="javascript:z0s('.changeme','color:red')">
+      <code>z0s('.changeme','color:red')</code></a></li>
+    <li><a href="javascript:z0s('.changeme','color:green')">
+      <code>z0s('.changeme','color:green')</code></a></li>
+    <li><a href="javascript:z0s('.changeme','color:yellow')">
+      <code>z0s('.changeme','color:yellow')</code></a></li>
+  </ul>
+  <ul>
+    <li><a href="javascript:z0s('h2, .changeme','font-style:italic')">
+      <code>z0s('h2, .changeme','font-style:italic')</code></a></li>
+    <li><a href="javascript:z0s('h2, .changeme','font-style:normal')">
+      <code>z0s('h2, .changeme','font-style:normal')</code></a></li>
+  </ul>
+
+  <hr>
 
 </body>
 </html>
